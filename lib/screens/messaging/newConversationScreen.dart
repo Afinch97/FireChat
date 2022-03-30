@@ -235,12 +235,13 @@ class _ChatScreenState extends State<ChatScreen> {
           Container(
               margin: EdgeInsets.symmetric(vertical: 5),
               child: Bubble(
-                  color: Colors.blueGrey,
+                  color: Colors.blue[200],
                   elevation: 0,
                   padding: const BubbleEdges.all(10.0),
                   nip: BubbleNip.rightTop,
-                  child: Text(document.get('content').toString(),
-                      style: TextStyle(color: Colors.white))),
+                  child: Text(
+                    document.get('content').toString(),
+                  )),
               width: 200)
         ],
         mainAxisAlignment: MainAxisAlignment.end,
@@ -254,12 +255,13 @@ class _ChatScreenState extends State<ChatScreen> {
             Row(children: <Widget>[
               Container(
                 child: Bubble(
-                    color: Colors.white10,
+                    color: Colors.grey.shade300,
                     elevation: 0,
                     padding: const BubbleEdges.all(10.0),
                     nip: BubbleNip.leftTop,
-                    child: Text(document.get('content').toString(),
-                        style: TextStyle(color: Colors.white))),
+                    child: Text(
+                      document.get('content').toString(),
+                    )),
                 width: 200.0,
                 margin: const EdgeInsets.only(left: 10.0),
               )

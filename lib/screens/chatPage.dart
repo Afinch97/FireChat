@@ -124,7 +124,7 @@ class _ChatPageState extends State<ChatPage> {
               user: user,
               peer: userMap[c.userIds[1]],
               lastMessage: c.lastMessage));
-        } else {
+        } else if (c.userIds[1] == user.uid) {
           list.add(ConvoListItem(
               user: user,
               peer: userMap[c.userIds[0]],
